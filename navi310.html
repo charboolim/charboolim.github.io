@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta charset="utf-8">
+  <title>NTT Com DD Web App</title>
+      <script type="text/javascript">
+        var images = ["available310.jpg", "booked310.jpg"];
+        var imgIndex = 0;
+
+        function changeImage() {
+            var imgElement = document.getElementById("img");
+            imgElement.src = images[imgIndex];
+            imgIndex = (imgIndex + 1) % images.length;
+        }
+
+        // Call the changeImage function every 60 seconds (1000 milliseconds * 60 seconds)
+        setInterval(changeImage, 3000);
+    </script>
+</head>
+<body bgcolor="black">
+<img id="img" src="available.jpg">
+</body>
+</html>
