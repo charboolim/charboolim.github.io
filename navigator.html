@@ -17,8 +17,25 @@
         // Call the changeImage function every 60 seconds (1000 milliseconds * 60 seconds)
         setInterval(changeImage, 5000);
     </script>
+  <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+    </style>
 </head>
 <body bgcolor="black">
-<img id="img" src="available.jpg">
+<div class="imgbox">
+  <img class="center-fit" id="img" src="available.jpg">
+</div>
 </body>
 </html>
